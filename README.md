@@ -88,20 +88,20 @@ Here you can see (<target name="run"..</target>) that the main class is org.upv.
 	b) Several lines below there is another configuration file, called FusionRules_Valencia.xml under the 'conf' directory.
 
 5) Open the fusion file. This file describes how the fusion will be performed. 
-	a) Each 'fusion_rule' element corresponds to a category. It includes:
-		a.1) General settings
-			a.1.1) location: indicates the location (by priority) to be considered when locating the merging POI 
-			a.1.2) name: indicates the name (by priority) to be considered when naming the merging POI 
-			a.1.3) description: indicates the description (by priority) to be considered when describing the merging POI
-			a.1.4) image: indicates whether this POI will include images to be search in different sources (element 'source')
-		a.2) Specific settings 
-			a.2.1) max_distance: represents the maximum distance to consider that two nearby POIs can represent the same POI
-			a.2.2) similarity_percentage: similarity threshold in the name strings to consider that two nearby POIs can represent the same POI
+- Each 'fusion_rule' element corresponds to a category. It includes:
+** General settings
+* location: indicates the location (by priority) to be considered when locating the merging POI 
+* name: indicates the name (by priority) to be considered when naming the merging POI 
+* description: indicates the description (by priority) to be considered when describing the merging POI
+* image: indicates whether this POI will include images to be search in different sources (element 'source')
+**Specific settings 
+* max_distance: represents the maximum distance to consider that two nearby POIs can represent the same POI
+* similarity_percentage: similarity threshold in the name strings to consider that two nearby POIs can represent the same POI
    
-	b) The element <source> represents data sources. Currently there are 3 data sources added by default: DBPedia, OSM and POIProxy. For each data source, there is a properties file that maps one category from our POI domain into one or more categories in its corresponding domain. You may find under the conf directory three properties files:
-		b.1) dbpedia.properties (here one category maps to one category)
-		b.2) osm.properties (here one category 'shop' maps to many categories in OSM)
-		b.3) poiproxy_local_valencia and poiproxy_local_tenerife. As POIProxy provides local data, you need to have one properties file (poiproxy_local_X) per each city. the name of the city is given in the fusion rules file
+- The element <source> represents data sources. Currently there are 3 data sources added by default: DBPedia, OSM and POIProxy. For each data source, there is a properties file that maps one category from our POI domain into one or more categories in its corresponding domain. You may find under the conf directory three properties files:
+* dbpedia.properties (here one category maps to one category)
+* osm.properties (here one category 'shop' maps to many categories in OSM)
+* poiproxy_local_valencia and poiproxy_local_tenerife. As POIProxy provides local data, you need to have one properties file (poiproxy_local_X) per each city. the name of the city is given in the fusion rules file
 
 
 Running
