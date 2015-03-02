@@ -89,20 +89,27 @@ Here you can see (<target name="run"..</target>) that the main class is org.upv.
 
 5) Open the fusion file. This file describes how the fusion will be performed. 
 - Each 'fusion_rule' element corresponds to a category. It includes:
-** General settings
+General settings
+```
 * location: indicates the location (by priority) to be considered when locating the merging POI 
 * name: indicates the name (by priority) to be considered when naming the merging POI 
 * description: indicates the description (by priority) to be considered when describing the merging POI
 * image: indicates whether this POI will include images to be search in different sources (element 'source')
-**Specific settings 
+```
+
+Specific settings 
+```
 * max_distance: represents the maximum distance to consider that two nearby POIs can represent the same POI
 * similarity_percentage: similarity threshold in the name strings to consider that two nearby POIs can represent the same POI
+```
+
    
 - The element <source> represents data sources. Currently there are 3 data sources added by default: DBPedia, OSM and POIProxy. For each data source, there is a properties file that maps one category from our POI domain into one or more categories in its corresponding domain. You may find under the conf directory three properties files:
+```
 * dbpedia.properties (here one category maps to one category)
 * osm.properties (here one category 'shop' maps to many categories in OSM)
 * poiproxy_local_valencia and poiproxy_local_tenerife. As POIProxy provides local data, you need to have one properties file (poiproxy_local_X) per each city. the name of the city is given in the fusion rules file
-
+```
 
 Running
 -------
