@@ -89,6 +89,7 @@ Here you can see (<target name="run"..</target>) that the main class is org.upv.
 
 5) Open the fusion file. This file describes how the fusion will be performed. 
 - Each 'fusion_rule' element corresponds to a category. It includes:
+
 General settings
 ```
 * location: indicates the location (by priority) to be considered when locating the merging POI 
