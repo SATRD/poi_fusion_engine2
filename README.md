@@ -62,7 +62,7 @@ Execute the following steps to install a OCDB instance on your machine / server.
 1) Download the code from this site. You can click on 'Download ZIP' or just open a console in your desired folder and type
 
 ```
-$ git clone https://github.com/fraunhoferfokus/ocdb
+$ git clone https://github.com/satrd/poi_fusion_engine2
 ```
 Developers can also download the code with Eclipse (see http://wiki.eclipse.org/EGit/User_Guide#Starting_from_existing_Git_Repositories for more info) or import it later from Eclipse
 
