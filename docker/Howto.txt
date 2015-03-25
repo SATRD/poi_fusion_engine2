@@ -1,0 +1,11 @@
+1. Build Docker Image
+	1.1 Copy Dockerfile, install.sh, start.sh and test.sh in a directory
+	1.2 docker build -t [name:tag] [directory]
+	
+2. Push Docker Image to Repository (optional)
+	2.1 Create account in https://hub.docker.com/
+	2.2 docker push [name:tag]
+	2.3 Enter login credentials when asked
+	
+3. Run Docker Image
+	3.1 docker run -p [hostport:8080] -d [image:tag]
