@@ -1,7 +1,7 @@
 #!/bin/bash
 
-cd /root/poi_fusion_engine2/services
-wget http://localhost:8080/fic2_fe_inquiry_valencia/citysdk/categories/search?list=poi -q -O down.json >/dev/null
+# cd /root/poi_fusion_engine2/services
+wget http://$1:$2/fic2_fe_inquiry_valencia/citysdk/categories/search?list=poi -q -O down.json >/dev/null
 if diff ./down.json ./down.json >/dev/null ; then
   echo "Test passed OK"
   echo 0
