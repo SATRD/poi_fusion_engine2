@@ -2,7 +2,8 @@
 
 # cd /root/poi_fusion_engine2/services
 wget http://$1:$2/fic2_fe_inquiry_valencia/citysdk/categories/search?list=poi -q -O down.json >/dev/null
-if diff ./down.json ./down.json >/dev/null ; then
+wget http://$1:$2/fic2_fe_inquiry_valencia/citysdk/down_expexted.json -q -O down_ex.json >/dev/null
+if diff ./down_ex.json ./down.json >/dev/null ; then
   echo "Test passed OK"
   echo 0
 else
